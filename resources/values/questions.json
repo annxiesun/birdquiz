@@ -1,0 +1,292 @@
+{
+    "QUESTIONS":
+              [
+                {
+                    "question": "Where do you feel the most at peace?",
+                    "answers": [
+                        {
+                            "text":"At home",
+                            "weights":[
+                                {
+                                "trait":0,
+                                "value":1
+                                },
+                                {
+                                    "trait":1,
+                                    "value":-1
+                                }
+                            ]
+                        },
+
+                        {
+                            "text":"In crowds",
+                            "weights":[
+                                {
+                                "trait":0,
+                                "value":1
+                                }
+                            ]
+                        },
+                        {
+                            "text":"In nature",
+                            "weights":[
+                                {
+                                "trait":0,
+                                "value":-1
+                                },
+                                {
+                                    "trait":2,
+                                    "value":-1
+                                    }
+                            ]
+                        },
+                        {
+                            "text":"With friends",
+                            "weights":[
+                                {
+                                "trait":0,
+                                "value":1
+                                }
+                            ]
+                        }
+                    ]
+                },
+                
+                {
+                    "question": "Do you know where you want to be in 5 years?",
+                    "answers": [
+                        {
+                            "text":"Yes",
+                            "weights":[
+                                {
+                                "trait":2,
+                                "value":-1
+                                }
+                            ]
+                        },
+
+                        {
+                            "text":"No",
+                            "weights":[
+                                {
+                                "trait":2,
+                                "value":1
+                                }
+                            ]
+                        }
+                    ]
+                }, {
+                    "question": "What do you fear the most?",
+                    "answers": [
+                        {
+                            "text":"Loneliness",
+                            "weights":[
+                                {
+                                "trait":1,
+                                "value":1
+                                }
+                            ]
+                        },
+
+                        {
+                            "text":"Failure",
+                            "weights":[
+                                {
+                                "trait":1,
+                                "value":1
+                                }
+                            ]
+                        }, 
+                        {
+                            "text":"Inadequacy",
+                            "weights":[
+                                {
+                                "trait":1,
+                                "value":-1
+                                }
+                            ]
+                        },
+                        {
+                            "text":"Change",
+                            "weights":[
+                                {
+                                "trait":2,
+                                "value":1
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "question": "When are you most productive?",
+                    "answers": [
+                        {
+                            "text":"Mornings",
+                            "weights":[
+                                {
+                                "trait":0,
+                                "value":1
+                                }
+                            ]
+                        },
+
+                        {
+                            "text":"Afternoons",
+                            "weights":[
+                                {
+                                "trait":0,
+                                "value":1
+                                }
+                            ]
+                        }, 
+                        {
+                            "text":"Evenings",
+                            "weights":[
+                                {
+                                "trait":0,
+                                "value":-1
+                                }
+                            ]
+                        },
+                        {
+                            "text":"Nights",
+                            "weights":[
+                                {
+                                "trait":0,
+                                "value":-1
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "question": "What do you prioritize in a vacation",
+                    "answers": [
+                        {
+                            "text":"Excitement",
+                            "weights":[
+                                {
+                                "trait":1,
+                                "value":1
+                                }
+                            ]
+                        },
+
+                        {
+                            "text":"Relaxation",
+                            "weights":[
+                                {
+                                "trait":2,
+                                "value":-1
+                                }
+                            ]
+                        }, 
+                        {
+                            "text":"Learning",
+                            "weights":[
+                                {
+                                "trait":0,
+                                "value":-1
+                                }
+                            ]
+                        },
+                        {
+                            "text":"Awe",
+                            "weights":[
+                                {
+                                "trait":0,
+                                "value":1
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "question": "What do you want to be remembered for?",
+                    "answers": [
+                        {
+                            "text":"Intelligence",
+                            "weights":[
+                                {
+                                "trait":1,
+                                "value":1
+                                }
+                            ]
+                        },
+
+                        {
+                            "text":"Achievement",
+                            "weights":[
+                                {
+                                "trait":1,
+                                "value":1
+                                }
+                            ]
+                        }, 
+                        {
+                            "text":"Creativity",
+                            "weights":[
+                                {
+                                "trait":1,
+                                "value":-1
+                                },
+                                {
+                                    "trait":2,
+                                    "value":-1
+                                    }
+                            ]
+                        },
+                        {
+                            "text":"Kindness",
+                            "weights":[
+                                {
+                                "trait":1,
+                                "value":-1
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "question": "What keeps you up at night?",
+                    "answers": [
+                        {
+                            "text":"Regrets",
+                            "weights":[
+                                {
+                                "trait":2,
+                                "value":1
+                                }
+                            ]
+                        },
+
+                        {
+                            "text":"Future plans",
+                            "weights":[
+                                {
+                                "trait":2,
+                                "value":-1
+                                },
+                                {
+                                    "trait":0,
+                                    "value":1
+                                    }
+                            ]
+                        }, 
+                        {
+                            "text":"Nothing",
+                            "weights":[
+                                {
+                                "trait":2,
+                                "value":1
+                                },
+                                {
+                                    "trait":0,
+                                    "value":1
+                                    }
+                            ]
+                        }
+                    ]
+                }
+              ]
+}
