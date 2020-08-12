@@ -9,7 +9,7 @@ module.exports = {
    },
    devServer: {
       inline: true,
-      port: 8001
+      port: process.env.PORT || 8001
    },
    module: {
        
