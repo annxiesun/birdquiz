@@ -4,16 +4,27 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development --open --hot",
+    "start": "webpack-dev-server --mode development --open --hot && node server.js",
     "build": "webpack --mode production"
+
+    
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
     "@babel/preset-react": "^7.10.4",
     "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.1.0",
     "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
     "babel-preset-react-app": "^3.1.2",
+    "css-loader": "^4.2.0",
+    "file-loader": "^6.0.0",
+    "font-loader": "^0.1.2",
+    "html-webpack-plugin": "^4.3.0",
     "lottie-web": "^5.7.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -21,24 +32,15 @@
     "react-parallax-tilt": "^1.4.61",
     "react-particles-js": "^3.3.0",
     "react-vanilla-tilt": "^1.0.0",
+    "server": "^1.0.30",
+    "style-loader": "^1.2.1",
     "ttf-loader": "^1.0.2",
+    "url-loader": "^4.1.0",
     "vanilla-tilt": "^1.7.0",
     "webpack": "^4.44.1",
+    "webpack-cdn-plugin": "^3.3.1",
     "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0",
-    
-    "@babel/core": "^7.11.1",
-    "@babel/preset-env": "^7.11.0",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^8.1.0",
-    "babel-preset-react": "^6.24.1",
-    "css-loader": "^4.2.0",
-    "file-loader": "^6.0.0",
-    "font-loader": "^0.1.2",
-    "html-webpack-plugin": "^4.3.0",
-    "style-loader": "^1.2.1",
-    "url-loader": "^4.1.0",
-    "webpack-cdn-plugin": "^3.3.1"
+    "webpack-dev-server": "^3.11.0"
   },
   "devDependencies": {
     "@babel/core": "^7.11.1",
