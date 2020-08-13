@@ -11,6 +11,9 @@ module.exports = {
       inline: true,
       port: process.env.PORT || 8001
    },
+
+
+
    module: {
        
       rules: [
@@ -48,6 +51,8 @@ module.exports = {
       new HtmlWebpackPlugin({
          template: './index.html'
       })
-   ]
+   ],
 
 }
+
+ 
