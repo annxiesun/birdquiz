@@ -8,6 +8,8 @@ import particleParam from '../particles/particles.json'
 
 import data from '../../resources/values/results.json';
 
+import FadeIn from 'react-fade-in';
+
 class Result extends React.Component {
 
   constructor(){
@@ -62,7 +64,7 @@ handleClick(){
     }
 
     return (
-
+<FadeIn>
       <div className="row result-box">
         <div className="col-4">
           <h2>You got</h2>
@@ -80,6 +82,8 @@ handleClick(){
   gyroscope={true}
 >
   
+<Particles className = "particles" params={particleParam}>
+</Particles>
   <div className="image">
     
 
@@ -91,11 +95,9 @@ handleClick(){
   </Tilt>
         </div>
       </div>
-
+</FadeIn>
     )
   }
 }
 
-//  <Particles className = "particles" params={particleParam}>
-//</Particles>
 export default Result;

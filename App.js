@@ -11,7 +11,7 @@ class App extends Component{
       return(
 
         <div id="app">
-           <Result></Result>
+           <TitleCard></TitleCard>
         
       </div>
     

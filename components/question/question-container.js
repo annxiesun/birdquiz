@@ -3,6 +3,10 @@ import Result from '../result/result.js';
 import data from '../../resources/values/questions.json';
 import '../question/question.css';
 
+import LoadingCard from '../../components/loadingcard/loadingcard.js';
+
+import FadeIn from 'react-fade-in';
+
 class QuestionContainer extends React.Component {
   constructor() {
     super()
@@ -27,14 +31,17 @@ class QuestionContainer extends React.Component {
     if(this.state.current_question<data.QUESTIONS.length){
       return <Question action={this.handler} data={data.QUESTIONS[this.state.current_question]}></Question>
     } else{
-      return <Result></Result>
+      return <LoadingCard></LoadingCard>
     }
   }
 
     return (
-<div >
-     {card()}
-          </div>
+
+      <FadeIn>
+      <div>
+          {card()}
+                </div>
+                </FadeIn>
     
     );
   }

@@ -10,8 +10,8 @@ class Answer extends React.Component {
 
         const componentInstance = this;
         
-        $(".question-card").fadeOut("slow", function() {
-            $('.question-card').fadeIn('slow')
+        $(".question-card").fadeOut(300, function() {
+            $('.question-card').fadeIn(300)
             componentInstance.props.action();
            
         });

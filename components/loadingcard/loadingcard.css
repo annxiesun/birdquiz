@@ -1,0 +1,13 @@
+.loading-card{
+    width:14vh;
+    height:14vh;
+    position: relative;
+    margin:auto;
+    margin-top:15%;
+}
+
+.loading-anim{
+    position: absolute;
+    width:100%;
+    transform:translateZ(2px);
+}
