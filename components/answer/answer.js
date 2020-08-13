@@ -10,13 +10,12 @@ class Answer extends React.Component {
 
         const componentInstance = this;
         
-        /*$(".question-card").fadeOut("slow", function() {
+        $(".question-card").fadeOut("slow", function() {
             $('.question-card').fadeIn('slow')
-            
+            componentInstance.props.action();
            
-        });*/
-
-        componentInstance.props.action();
+        });
+        
         
         for (var i =0; i<this.props.answer.weights.length;i++){
             
