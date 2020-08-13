@@ -8,11 +8,11 @@ class Answer extends React.Component {
 
     handleClick(){
 
-    
+        const componentInstance = this;
         
         $(".question-card").fadeOut(300, function() {
             $('.question-card').fadeIn(300)
-            this.props.action();
+            componentInstance.props.action();
            
         });
         

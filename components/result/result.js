@@ -23,12 +23,12 @@ class Result extends React.Component {
     
 }
 componentDidMount(){
-  $(document.getElementById('result-text')).fadeOut(1);
+  $('.result-text').fadeOut(1);
 }
 handler(){
 
   if(this.state.firstClick){
-    $(document.getElementById('result-text')).fadeIn(1000);
+    $('.result-text').fadeIn(1000);
     this.setState(
       firstClick=false
     );
@@ -85,7 +85,7 @@ handleClick(){
 <FadeIn>
       <div className="row result-box">
         <div className="col-4" >
-          <div id="result-text">
+          <div className="result-text">
           <h2>You got</h2>
           <h1>{data.RESULT[bird].name}</h1>
           <p>

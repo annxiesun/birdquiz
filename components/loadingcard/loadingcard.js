@@ -3,6 +3,8 @@ import './loadingcard.css';
 import Lottie from 'react-lottie'
 import loadAnimation from "../../resources/animations/featherload.json";
 import Result from '../result/result.js';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
 class LoadingCard extends React.Component {
 

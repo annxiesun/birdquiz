@@ -30,7 +30,7 @@ class Card extends React.Component {
   render() {
 
     return (
-        <ReactCardFlip isFlipped={this.state.isFlipped}flipDirection="horizontal">
+        <ReactCardFlip isFlipped={this.state.isFlipped} flipDirection="horizontal">
   
 
   <Tilt style={{visibility: this.state.showFront? 'visible' : 'hidden' }}
