@@ -1,6 +1,5 @@
 
 import TitleCard from '../titlecard/titlecard.js'
-import Tilt from 'react-parallax-tilt';
 import Particles from 'react-particles-js';
 import './result.css';
 
@@ -10,13 +9,31 @@ import data from '../../resources/values/results.json';
 
 import FadeIn from 'react-fade-in';
 
+import Card from '../card/card.js';
+
 class Result extends React.Component {
 
   constructor(){
     super()
     this.handleClick = this.handleClick.bind(this);
+    this.handler = this.handler.bind(this);
+    this.state = {
+      firstClick: true
+    };
+    
 }
+componentDidMount(){
+  $(document.getElementById('result-text')).fadeOut(1);
+}
+handler(){
 
+  if(this.state.firstClick){
+    $(document.getElementById('result-text')).fadeIn(1000);
+    this.setState(
+      firstClick=false
+    );
+  }
+}
 handleClick(){
 
   $(".result-box").fadeOut("slow");
@@ -64,35 +81,23 @@ handleClick(){
     }
 
     return (
+
 <FadeIn>
       <div className="row result-box">
-        <div className="col-4">
+        <div className="col-4" >
+          <div id="result-text">
           <h2>You got</h2>
           <h1>{data.RESULT[bird].name}</h1>
           <p>
           {data.RESULT[bird].description}
         </p>
-          <button class="retry-btn" onClick={this.handleClick}>Retry</button>
+      
+          <button className="retry-btn" onClick={this.handleClick}>Retry</button>
+          </div>
         </div>
 
         <div className="col-4 ">
-<Tilt className="tilt parallax-effect-glare-scale" 
-  
-  perspective={1000}
-  gyroscope={true}
->
-  
-<Particles className = "particles" params={particleParam}>
-</Particles>
-  <div className="image">
-    
-
-  <img src={data.RESULT[bird].image} className="card-img img-fluid"/>
-
-
-  </div>
-  
-  </Tilt>
+      <Card bird={data.RESULT[bird]} action={this.handler}></Card>
         </div>
       </div>
 </FadeIn>
@@ -101,3 +106,6 @@ handleClick(){
 }
 
 export default Result;
+
+//<Particles className = "particles" params={particleParam}>
+//</Particles>

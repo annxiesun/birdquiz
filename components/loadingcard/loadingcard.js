@@ -12,16 +12,16 @@ class LoadingCard extends React.Component {
 
   componentDidMount(){
     setTimeout(function(){
-      setTimeout(function(){
+
       ReactDOM.render(<Result/>, document.getElementById('app'));
-      },3000)
-      $('.result-box').fadeOut(3000);
+     
+      
       
     }, 5000);
   }
   render() {
     const defaultOptions = {
-      loop: true,
+      loop: false,
       autoplay: true,
       animationData: loadAnimation,
 

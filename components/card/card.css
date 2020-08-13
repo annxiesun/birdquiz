@@ -1,0 +1,25 @@
+.card{
+    background:none;
+    backface-visibility: hidden;
+    border:none;
+}
+
+
+
+ .tilt{
+     width:80%!important;
+     padding:0 !important;
+     border-radius:0!important;
+     margin:0!important;
+     transform-style: preserve-3d;
+ 
+ 
+     border-style:none;
+     /*
+     border-color: white;
+     border-width:2px;*/
+     
+     
+ 
+ 
+ }

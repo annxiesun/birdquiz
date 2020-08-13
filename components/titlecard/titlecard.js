@@ -2,6 +2,7 @@ import QuestionContainer from '../question/question-container.js';
 import './titlecard.css';
 import Icon from "../../icon.js";
 
+import FadeIn from 'react-fade-in';
 
 class TitleCard extends React.Component {
 
@@ -24,6 +25,7 @@ class TitleCard extends React.Component {
   render() {
 
     return (
+      <FadeIn>
       <div className="title-card">
         <div className="col-4-offset-4" align="center">
           <h1 className="title">Feather Finder</h1>
@@ -33,6 +35,7 @@ class TitleCard extends React.Component {
           </a>
         </div>
       </div>
+      </FadeIn>
     );
   }
 }

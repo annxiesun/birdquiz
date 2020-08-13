@@ -10,47 +10,6 @@ body{
     margin-top:10%;
 }
 
-.image{
-   background: linear-gradient(312deg, #ff6d6c, #ff5ba9,#ff936c);
-    background-size: 600%;
-
-   -webkit-animation: AnimationName 30s ease infinite;
-   -moz-animation: AnimationName 30s ease infinite;
-   animation: AnimationName 30s ease infinite;
-
-}
-
-.tilt{
-    width:80%!important;
-    padding:0 !important;
-    border-radius:0!important;
-    margin:0!important;
-    transform-style: preserve-3d;
-
-
-    border-style:solid;
-    border-color: white;
-    border-width:2px;
-    
-
-
-}
-
-@-webkit-keyframes AnimationName {
-    0%{background-position:0% 84%}
-    50%{background-position:100% 17%}
-    100%{background-position:0% 84%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:0% 84%}
-    50%{background-position:100% 17%}
-    100%{background-position:0% 84%}
-}
-@keyframes AnimationName {
-    0%{background-position:0% 84%}
-    50%{background-position:100% 17%}
-    100%{background-position:0% 84%}
-}
 
 .particles{
     position:fixed;

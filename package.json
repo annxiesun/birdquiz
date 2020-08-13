@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
-    "heroku-postbuild": "webpack -p"
+    "heroku-postbuild": "webpack -p",
+    "start:dev": "webpack-dev-server --mode development --open --hot",
+    "build:dev": "webpack --mode production"
   },
   "author": "",
   "license": "ISC",
@@ -26,6 +28,7 @@
     "html-webpack-plugin": "^4.3.0",
     "lottie-web": "^5.7.1",
     "react": "^16.13.1",
+    "react-card-flip": "^1.0.11",
     "react-dom": "^16.13.1",
     "react-fade-in": "^1.1.0",
     "react-icomoon": "^2.1.3",
