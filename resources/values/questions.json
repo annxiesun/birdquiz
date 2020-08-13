@@ -31,10 +31,6 @@
                             "text":"In nature",
                             "weights":[
                                 {
-                                "trait":0,
-                                "value":-1
-                                },
-                                {
                                     "trait":2,
                                     "value":-1
                                     }
@@ -279,11 +275,7 @@
                                 {
                                 "trait":2,
                                 "value":1
-                                },
-                                {
-                                    "trait":0,
-                                    "value":1
-                                    }
+                                }
                             ]
                         }
                     ]

@@ -27,7 +27,7 @@ handleClick(){
     
     if(global.scoreCount[global.TEMP]<=0){
 
-      if(global.scoreCount[global.PERSONALITY]<=0){
+      if(global.scoreCount[global.PERSONALITY]<0){
         
         if(global.scoreCount[global.HABITAT]<=0){
             bird=0;
@@ -43,7 +43,7 @@ handleClick(){
 
       }
     } else{
-      if(global.scoreCount[global.PERSONALITY]<=0){
+      if(global.scoreCount[global.PERSONALITY]<0){
         
         if(global.scoreCount[global.HABITAT]<=0){
           bird=4;
