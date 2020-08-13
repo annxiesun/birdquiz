@@ -70,7 +70,7 @@ handleClick(){
           <p>
           {data.RESULT[bird].description}
         </p>
-          <button onClick={this.handleClick}>Retry</button>
+          <button class="retry-btn" onClick={this.handleClick}>Retry</button>
         </div>
 
         <div className="col-4 ">

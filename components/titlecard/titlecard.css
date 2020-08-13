@@ -17,20 +17,18 @@
 }
 
 
-.icon-feather{
+.featherlogo {
     font-family: feather;
     -webkit-font-smoothing: antialiased;
-    font-style: normal;
-    font-size:7em;
-    line-height: 0em;
     color:white;
     transition: 0.2s;
     user-select: none;
+    width:10em;
 }
 
 
-.icon-feather:hover{
-    text-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
+.featherlogo:hover{
+    transform:scale(1.1);
     transition: 0.2s;
     
 }

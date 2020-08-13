@@ -19,6 +19,7 @@
 
 .answer-group{
     width:55vw;
+    margin-top:2em;
     justify-content: center;
 }
 
@@ -31,7 +32,8 @@
     border-radius:4em;
     border-style:solid;
     border-width:1px;
-    border-color:white;
+    border-color:rgba(255,255,255,0.7);
+    color:rgba(255,255,255,0.7);
 
     width:10em;
     padding:1em;

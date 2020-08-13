@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $(".icon-feather").click(function(){
+    $(".featherlogo").click(function(){
         $(".title-card").fadeOut();
 
 

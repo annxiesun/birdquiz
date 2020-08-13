@@ -32,7 +32,7 @@ class QuestionContainer extends React.Component {
   }
 
     return (
-<div>
+<div >
      {card()}
           </div>
     

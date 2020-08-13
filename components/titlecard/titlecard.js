@@ -1,5 +1,6 @@
 import QuestionContainer from '../question/question-container.js';
 import './titlecard.css';
+import Icon from "../../icon.js";
 
 
 class TitleCard extends React.Component {
@@ -10,11 +11,14 @@ class TitleCard extends React.Component {
   }
 
   handleClick() {
-          $(".title-card").fadeOut();
-  
+    $(".title-card").fadeOut("slow", function() {
+      ReactDOM.render(<QuestionContainer/>, document.getElementById('app'));
+      
+      
+    });
   
       
-    ReactDOM.render(<QuestionContainer/>, document.getElementById('app'));
+    
   }
 
   render() {
@@ -25,7 +29,7 @@ class TitleCard extends React.Component {
           <h1 className="title">Feather Finder</h1>
           <a onClick={this.handleClick} id="start" className="link start-btn" type="button">
           
-      <i className="demo-icon icon-feather"></i>
+          <Icon   className="featherlogo" icon="featherlogo" />
           </a>
         </div>
       </div>
