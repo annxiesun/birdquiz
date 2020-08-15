@@ -34,19 +34,23 @@ class Card extends React.Component {
   
 
   <Tilt style={{visibility: this.state.showFront? 'visible' : 'hidden' }}
-  perspective={1000}>
+  perspective={1000}
+  tiltMaxAngleX={10}
+  tiltMaxAngleY={10}>
     <div onClick={this.handleClick} className="card-back card">
     <img src={"../../resources/images/back.png"} className="card-img img-fluid"/>
       </div>
       </Tilt>
 
-      <Tilt style={{visibility: this.state.showBack? 'visible' : 'hidden' }}perspective={1000}>
+      <Tilt style={{visibility: this.state.showBack? 'visible' : 'hidden' }}perspective={1000}tiltMaxAngleX={10}
+  tiltMaxAngleY={10}>
   <div onClick={this.handleClick} className="card">
   <img src={this.props.bird.image} className="card-img img-fluid"/>
   </div>
   </Tilt>
 
   </ReactCardFlip>
+  
     );
   }
 }

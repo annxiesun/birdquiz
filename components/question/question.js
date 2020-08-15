@@ -26,10 +26,10 @@ class Question extends React.Component {
                       <h1 className="question">{this.props.data.question}</h1>
   
                       <div className="row answer-group">
-  
+                      <div className="col-0 col-sm-0 col-lg-2"></div>
                           {items}
   
-  
+                     <div className="col-0 col-sm-0 col-lg-2"></div>
                       </div>
   
   

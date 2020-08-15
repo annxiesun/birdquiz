@@ -1,0 +1,81 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+.answer{
+  display: inline-block;
+  position: relative;
+  background: none;
+  border: none;
+  color: #fff;
+  font-family:Montserrat;
+  font-weight:200;  
+  cursor: pointer;
+  margin-bottom:1.5em;
+  width:100%;
+  letter-spacing:0.1em;
+  
+}
+span{
+  display: block;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.answer::before, .answer::after{
+  content:"";
+  width: 0;
+  height: 1px;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #fff;
+}
+
+span::before, span::after{
+  content:"";
+  width:1px;
+  height:0;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #fff;
+}
+.answer:hover::before, .answer:hover::after{
+  width: 100%;
+}
+.answer:hover span::before, .answer:hover span::after{
+  height: 100%;
+}
+
+
+.answer::before, .answer::after{
+  transition-delay: 0s;
+}
+.answer span::before, .answer span::after{
+  transition-delay: 0.2s;
+}
+.answer::before{
+  right: 0;
+  top: 0;
+}
+.answer::after{
+  left: 0;
+  bottom: 0;
+}
+.answer span::before{
+  left: 0;
+  top: 0;
+}
+.answer span::after{
+  right: 0;
+  bottom: 0;
+}
+.answer:hover::before, .answer:hover::after{
+  transition-delay: 0.2s;
+}
+.answer:hover span::before, .answer:hover span::after{
+  transition-delay: 0s;
+}
+

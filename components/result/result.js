@@ -84,7 +84,7 @@ handleClick(){
 
 <FadeIn>
       <div className="row result-box">
-        <div className="col-4" >
+        <div className="col-0 col-sm-0 col-md-6 col-lg-4 result-big" >
           <div className="result-text">
           <h2>You got</h2>
           <h1>{data.RESULT[bird].name}</h1>
@@ -96,9 +96,22 @@ handleClick(){
           </div>
         </div>
 
-        <div className="col-4 ">
-      <Card bird={data.RESULT[bird]} action={this.handler}></Card>
+        <div className="col-0 col-sm-0 col-md-6 col-lg-4 card-img ">
+      <Card className="card" bird={data.RESULT[bird]} action={this.handler}></Card>
         </div>
+
+        <div className="col-12 col-sm-12 col-md-0 col-lg-0 result-small" >
+          <div className="result-text">
+          <h2>You got</h2>
+          <h1>{data.RESULT[bird].name}</h1>
+          <p>
+          {data.RESULT[bird].description}
+        </p>
+      
+          <button className="retry-btn" onClick={this.handleClick}>Retry</button>
+          </div>
+        </div>
+
       </div>
 </FadeIn>
     )

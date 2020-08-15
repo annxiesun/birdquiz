@@ -1,4 +1,5 @@
 import '../../common/globals.js';
+import './answer.css';
 
 class Answer extends React.Component {
     constructor(props){
@@ -38,8 +39,11 @@ class Answer extends React.Component {
 
     render() {
       return (
-        <div className="col-6 col-sm-6 col-lg-3">
-            <button onClick={this.handleClick} className="answer">{this.props.answer.text} </button>
+        <div className="col-6 col-sm-6 col-lg-2">
+            <button onClick={this.handleClick} className="answer">
+            
+            <span>{this.props.answer.text} </span>
+      </button>
         </div>
       );
     }
