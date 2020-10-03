@@ -4,15 +4,21 @@ import  './resources/fonts/featherfinder.ttf';
 import TitleCard from './components/titlecard/titlecard.js';
 
 import Result from './components/result/result.js';
+import Particles from 'react-particles-js';
+import ParticleParams from './components/particles/particles.json'
+
 //<TitleCard></TitleCard>
 
 class App extends Component{
    render(){
       return(
-
+<div>
         <div id="app">
-           <Result></Result>
+           <TitleCard></TitleCard>
+           
         
+      </div>
+      <Particles  params={ParticleParams}/>
       </div>
     
       
