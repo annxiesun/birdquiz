@@ -31,7 +31,9 @@ class TitleCard extends React.Component {
           <h1 className="title">Feather Finder</h1>
           <a onClick={this.handleClick} id="start" className="link start-btn" type="button">
           
+          <div className="featherlogo-box">
           <Icon   className="featherlogo" icon="featherlogo" />
+          </div>
           </a>
         </div>
       </div>

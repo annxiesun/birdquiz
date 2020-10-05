@@ -13,17 +13,23 @@
     margin: auto;
     margin-top:25vh;
     user-select: none;
+    background-color:rgba(255,255,255,0);
 
 }
 
-
+.feather-logo-box{
+background-color:transparent;
+}
 .featherlogo {
     font-family: feather;
-    -webkit-font-smoothing: antialiased;
     color:white;
     transition: 0.2s;
     user-select: none;
     width:10em;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-background-size: 0;
+    -webkit-appearance: none;
+
 }
 
 
@@ -31,8 +37,13 @@
     transform:scale(1.1);
     transition: 0.2s;
     
+    
 }
 
 .start-btn{
     margin-top:5em;
+    background-color:transparent !important;
+    border:none;
+    outline:none;
 }
+

@@ -5,37 +5,37 @@
         {
             
             "name":"Swan",
-            "description":"lorem ipsum",
+            "description":"",
             "image":"../../resources/images/swan.png"
 
         },
         {
             "name":"Penguin",
-            "description":"lorem ipsum",
+            "description":"",
             "image":"../../resources/images/penguin.png"
 
         },
         {
             "name":"Flamingo",
-            "description":"lorem ipsum",
+            "description":"",
             "image":"../../resources/images/flamingo.png"
 
         },
         {
             "name":"Crane",
-            "description":"lorem ipsum",
+            "description":"",
             "image":"../../resources/images/crane.png"
 
         },
         {
             "name":"Hummingbird",
-            "description":"lorem ipsum",
+            "description":"",
             "image":"../../resources/images/hummingbird.png"
 
         },
         {
             "name":"Owl",
-            "description":"lorem ipsum",
+            "description":"",
             "image":"../../resources/images/owl.png"
 
         },
@@ -47,7 +47,7 @@
         },
         {
             "name":"Eagle",
-            "description":"lorem ipsum",
+            "description":"",
             "image":"../../resources/images/eagle.png"
 
         }
